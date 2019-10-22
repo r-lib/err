@@ -20,7 +20,7 @@ An `rlib_error` object has the following members:
 * `parent`: optional, pointer to a parent error, of class `error`. It
   may also be `NULL`, which is the same as missing.
 * `call`: optional, the captured call, of class `call`.
-* `version`: optional, `r_lib` error version, defaults to 1.0, i.e. this
+* `version`: optional, `rlib_error` version, defaults to 1.0, i.e. this
   specification.
 
 ## Traces
@@ -48,7 +48,7 @@ the trace of the error may only include part of the stack: from the top to
 the place where the error was thrown. The same holds for the parent error.
 (This is the rlang 0.4.0 behavior.)
 
-## Versionining
+## Versioning
 
 Future versions of the `rlib_error` and `rlib_trace` classes will
 always add a `version` member.
